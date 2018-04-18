@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title> ADDRESS BOOK </title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="styles.css">
+</head> 
+
+<body>
+
+<h1>Address Book</h1>
+<h2>Add contacts:</h2>
+<label>First Name:<br /> <input type="text" name="name"/></label>
+<br />
+<label>Last Name:<br /> <input type="text" name="name"/></label>
+<br />
+<fieldset>
+<legend>Contact Details</legend>
+<label>Mobile:<br />
+<input type="text" name="mobile" required="required"/>
+</label><br />
+<label>Email:<br />
+<input type="email" name="email"/>
+</label><br />
+<label>Address:<br />
+<input type="text" name="address"/>
+</label><br />
+</fieldset>
+
+<details>
+<form> 
+    <div class="button-wrapper">
+        <div class="item button">
+            <div class="field"><input type="button" id="contacts-op-discard" value="DISCARD" /></div>
+        </div>
+        <div class="item button button-default">
+            <div class="field"><input type="submit" id="contacts-op-save" value="SAVE" /></div>
+        </div>
+    </div>
+    <input type="hidden" name="id_entry" value="0" />
+</form>
+</details> 
+
+</body>
+</html>
